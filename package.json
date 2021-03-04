@@ -8,12 +8,6 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "sprite": "svg-sprite --config src/sprite-config.json src/svg/*.svg",
-    "start1:ssr": "npm run build:ssr && npm run serve:ssr",
-    "dev1:ssr": "ng run stroyka:serve-ssr",
-    "serve1:ssr": "node dist/stroyka/server/main.js",
-    "build1:ssr": "ng build --prod && ng run stroyka:server:production",
-    "prerender1": "ng run stroyka:prerender",
     "deploy": "ng build --prod --base-href https://MAKGIS.github.io/pimalion-analysis-demo/ && npx ngh --dir=dist/pimalion"
   },
   "private": true,
