@@ -1,0 +1,8 @@
+
+
+<ng-container *ngIf="pimalionCategories$ | async as categories">
+
+   <app-block-pimalion-categories-grid header="Categories" layout="classic" [categories]="categories">
+   </app-block-pimalion-categories-grid>
+
+</ng-container>
