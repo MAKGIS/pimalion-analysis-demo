@@ -3,7 +3,7 @@
   "version": "1.15.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve -o --port 4201",
+    "start": "node server.js",
     "build1": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -14,7 +14,6 @@
     "serve:ssr": "node dist/stroyka/server/main.js",
     "build:ssr": "ng build --prod && ng run stroyka:server:production",
     "prerender": "ng run stroyka:prerender",
-
     "deploy": "ng build --prod --base-href https://MAKGIS.github.io/pimalion-analysis-demo/ && npx ngh --dir=dist/stroyka/browser"
   },
   "private": true,
